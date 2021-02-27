@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src" including="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+  <classpathentry kind="var" path="M2_REPO/com/opencsv/opencsv/5.3/opencsv-5.3.jar" sourcepath="M2_REPO/com/opencsv/opencsv/5.3/opencsv-5.3-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar" sourcepath="M2_REPO/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-text/1.9/commons-text-1.9.jar" sourcepath="M2_REPO/org/apache/commons/commons-text/1.9/commons-text-1.9-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar" sourcepath="M2_REPO/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" sourcepath="M2_REPO/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar" sourcepath="M2_REPO/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar" sourcepath="M2_REPO/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/mongodb/mongodb-driver/3.12.8/mongodb-driver-3.12.8.jar" sourcepath="M2_REPO/org/mongodb/mongodb-driver/3.12.8/mongodb-driver-3.12.8-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/mongodb/bson/3.12.8/bson-3.12.8.jar" sourcepath="M2_REPO/org/mongodb/bson/3.12.8/bson-3.12.8-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/mongodb/mongodb-driver-core/3.12.8/mongodb-driver-core-3.12.8.jar" sourcepath="M2_REPO/org/mongodb/mongodb-driver-core/3.12.8/mongodb-driver-core-3.12.8-sources.jar"/>
+</classpath>

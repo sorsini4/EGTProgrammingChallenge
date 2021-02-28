@@ -1,7 +1,8 @@
 /**
  * This is the number class and it is abstract. It has a default constructor in which nothing is 
- * set, and then a subsequent constructor in which the number field is set. It has one abstract 
- * method called format which is implemented for each specific class that extends this class. 
+ * set, and then a subsequent constructor in which the number field is set. It has two abstract 
+ * methods called format and validNumber which are implemented for each specific class that extends this
+ * class. 
  * @author Steven Orsini
  * @version 2/23/2021
  */
@@ -50,6 +51,14 @@ public abstract class Number {
 		return getNumber();
 	}
 	
+	/**
+	 * This is an abstract method that will check if the corresponding number is a valid entry for
+	 * its respective class.
+	 * @param number - the respective number 
+	 * @return true if the number is valid, false if it is not valid
+	 */
+	public abstract boolean validNumber(String number);
+
 	/**
 	 * This is an abstract method that will format the number the corresponds to the respective
 	 * class. 

@@ -1,7 +1,8 @@
 /**
  * This class extends the Number abstract class. It is used to format a phone number in the 
- * format of (xxx)xxx-xxxx. There is one abstract method that the class inherits and that is the
- * method called format, which is specific to this class in formatting a phone number.
+ * format of (xxx)xxx-xxxx. There are two abstract methods that the class inherits and those are the
+ * methods called format, which is specific to this class in formatting a phone number and validNumber
+ * which is specific to checking the length and integrity of the phone number entered.
  * @author Steven Orsini
  * @version 2/23/2021
  */
@@ -25,6 +26,17 @@ public class PhoneNumber extends Number {
 
 	@Override
 	/**
+	 * {@inheritDocs
+	 */
+	public boolean validNumber(String number) throws InvalidFormatException {
+		if(number.matches("\\d+") && number.length() == 10) {
+			return true;
+		}
+		throw new InvalidFormatException("Please enter a number with only digits, and maximum and minimum of 10 digits.");
+	}
+
+	@Override
+	/**
 	 * {@inheritDocs}
 	 */
 	public void format(String number) {
@@ -33,4 +45,5 @@ public class PhoneNumber extends Number {
 		formattedNumber = formattedNumber + number.substring(6,10);
 		this.setNumber(formattedNumber);
 	}
+	
 }

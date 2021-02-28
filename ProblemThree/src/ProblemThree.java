@@ -6,8 +6,8 @@ import java.io.IOException;
  * The intention of this class is to format user entered numbers. There are two formats that are going
  * to be done, phone number and social security number. These formats are (xxx)xxx-xxxx and xxx-xx-xxxx
  * respectively. There is an abstract class Number in which PhoneNumber and SocialSecurityNumber objects
- * both extend, and inherit the format method from which does all the formatting from within the objects
- * respective number field.
+ * both extend, and inherit the format and validNumber method from which does all the formatting from 
+ * within the objects respective number field, and checks for a valid entry.
  * @author Steven Orsini
  * @version 2/28/2021
  */
@@ -39,13 +39,10 @@ public class ProblemThree {
         		PhoneNumber phone = new PhoneNumber();
         		try {
         			userAnswer = input.readLine();
-        			if(userAnswer.matches("\\d+") && userAnswer.length() == 10) {
+        			if(phone.validNumber(userAnswer)) {
         				System.out.println("Valid phone number! Formatting...");
         				phone.format(userAnswer);
         				System.out.println(phone.toString());
-        			}
-        			else {
-        				throw new InvalidFormatException("Please enter a number with only digits, and maximum and minimum of 10 digits.");
         			}
         		}
         		catch(InvalidFormatException e) {
@@ -60,13 +57,10 @@ public class ProblemThree {
         		System.out.println("Please enter a social security number to be formatted\n> ");
         		try {
         			userAnswer = input.readLine();
-        			if(userAnswer.matches("\\d+") && userAnswer.length() == 9) {
+        			if(social.validNumber(userAnswer)) {
         				System.out.println("Valid social security number! Formatting...");
         				social.format(userAnswer);
         				System.out.println(social.toString());
-        			}
-        			else {
-        				throw new InvalidFormatException("Please enter a number with only digits, and maximum and minimum of 9 digits.");
         			}
         		}
         		catch(InvalidFormatException e) {

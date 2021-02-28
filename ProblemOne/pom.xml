@@ -4,6 +4,10 @@
   <artifactId>EGTProgramming</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <properties>
+    <exec.mainClass> ProblemOne </exec.mainClass>
+  </properties>
+
   <dependencies>
   	<dependency>
   		<groupId> com.opencsv </groupId>

@@ -54,7 +54,7 @@ public class ProblemThree {
         	}
         	else if(userAnswer.equals("2")) {
         		SocialSecurityNumber social = new SocialSecurityNumber();
-        		System.out.println("Please enter a social security number to be formatted\n> ");
+        		System.out.print("Please enter a social security number to be formatted\n> ");
         		try {
         			userAnswer = input.readLine();
         			if(social.validNumber(userAnswer)) {

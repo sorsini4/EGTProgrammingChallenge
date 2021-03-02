@@ -8,7 +8,7 @@ import com.opencsv.exceptions.CsvValidationException;
  * The intention of this class is to read in a CSVFile, and parse it accordingly. This program will
  * print each value (seperated by a comma, obviously), on a new line. It will ignore all commas 
  * within the quotation marks. The file path is found via the program, retrieving the working
- * directory, and then the user is tasked with entering the correct file name, case sensitive.
+ * directory, and then hardcoding in the /src/FileName portion.
  * @author Steven Orsini
  * @version 2/22/2021
  */
@@ -19,11 +19,11 @@ public class ProblemTwo {
 			System.out.println("Please ensure that the file which you would like to parse is located within the working directory.");
 			
 			CSVReader csvReader = new CSVReader(new FileReader(System.getProperty("user.dir") + "/src/CsvExample.csv"));
-			System.out.println("File found!");
+            System.out.println("File found!");
 			
-			//this is done because in the sample output the ID,Name,Address was all omitted from the output
-			String[] firstLine = csvReader.readNext();
-			
+            //done to skip the first line like shown within sample output
+            csvReader.skip(1);
+
 			String[] nextLine;
 			
 			while((nextLine = csvReader.readNext()) != null) {

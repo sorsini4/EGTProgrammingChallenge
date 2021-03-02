@@ -34,18 +34,22 @@ public class ProblemOne {
 		setUpDB();
 		
 		int amtOfNames = 0;
+        boolean done = false;
 		
-		System.out.print("How many names would you like to input?\n> ");
-		try {
-			amtOfNames = Integer.parseInt(input.readLine());
+        while(!done) {
+    		System.out.print("How many names would you like to input?\n> ");
+	    	try {
+		    	amtOfNames = Integer.parseInt(input.readLine());
+		        done = true;
+            }
+		    catch(NumberFormatException e) {
+			    System.out.println("Please enter an integer amount to clarify the number of names you would like to enter.");
+	    	}
+	    	catch(IOException e1) {
+	    		e1.printStackTrace();
+	    	}
 		}
-		catch(NumberFormatException e) {
-			System.out.println("Please enter an integer amount to clarify the number of names you would like to enter.");
-		}
-		catch(IOException e1) {
-			e1.printStackTrace();
-		}
-		
+
 		populateDatabaseWithIDs(amtOfNames);
 		printIDs();
 		

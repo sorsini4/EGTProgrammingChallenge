@@ -2,9 +2,9 @@
 
 I. Table of Contents 
 
-I - Table of Contents
-II - Description
-III - Necessary Technologies
+    I - Table of Contents
+    II - Description
+    III - Necessary Technologies
 
 
 II. Descripiton

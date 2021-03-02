@@ -24,10 +24,10 @@ ProblemThree), there is the same structure, as follows:
     
     target       --> this is a folder that contains a couple of sub directories
                     
-                target/libs              -->  this directory has all the .jar dependencies needed for the 
+                target/libs              --> this directory has all the .jar dependencies needed for the 
                                               program to run
     
-                target/classes           -->  this directory has all the .class files that are compiled from
+                target/classes           --> this directory has all the .class files that are compiled from
                                               the .java files
             
                 target/maven-archiver    --> this directory has the pom.properties file within it

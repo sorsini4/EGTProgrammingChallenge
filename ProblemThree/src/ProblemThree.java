@@ -46,7 +46,12 @@ public class ProblemThree {
         			}
         		}
         		catch(InvalidFormatException e) {
-        			System.out.println(e.getMessage());
+                    if(!userAnswer.equals("Q")) {
+        			    System.out.println(e.getMessage());
+                    }
+                    else {
+                        done = true;
+                    }
         		}
         		catch(IOException e1) {
         			e1.printStackTrace();
@@ -64,8 +69,13 @@ public class ProblemThree {
         			}
         		}
         		catch(InvalidFormatException e) {
-        			System.out.println(e.getMessage());
-        		}
+        		    if(!userAnswer.equals("Q"))	{    
+                        System.out.println(e.getMessage());
+                    }
+                    else {
+                        done = true;
+        		    }
+                }
         		catch(IOException e1) {
         			e1.printStackTrace();
         		}

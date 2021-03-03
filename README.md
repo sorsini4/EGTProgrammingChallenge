@@ -65,8 +65,12 @@ ProblemThree), there is the same structure, as follows:
             process continues until the user enters Q as wanted. If they enter an invalid choice, it prints out what they entered and prompts them
             that it was an invalid entry. 
 
-To run the programs I used the following commands (This is just an example, use the correct number ie, for problem one use One, Two etc.)
-All of the subdirectories have there own 0-README.txt file to show what exact commands you run to run the JAR.
+To compile, pack, and run the programs I used the following commands (This is just an example, use the correct number ie, for problem one use One, Two 
+            etc.)
+
+All of the subdirectories have there own 0-README.txt file to show what exact commands you use to run the JAR.
+
+To compile, pack and run Problem# I used the following:
 
     1. ` mvn clean install package `
     2. ` java -jar target/ProblemOne-0.0.1-SNAPSHOT.jar `
@@ -76,6 +80,10 @@ All of the subdirectories have there own 0-README.txt file to show what exact co
                    (for Problem One) on my VM. I did that with the following command:
                 
                    ` sudo apt install mongodb ` 
+
+For you to run the programs all you need to do is:
+    1. ` java -jar target/ProblemNumber.jar `
+    2. Output will be printed to the console
 
 III. Necessary Technologies
 

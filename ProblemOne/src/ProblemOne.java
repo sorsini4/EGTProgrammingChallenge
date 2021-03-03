@@ -92,7 +92,7 @@ public class ProblemOne {
 	 * that is attached to the end of the name.
 	 * @param amtOfNames - the amount of names the user would like to enter 
 	 */
-	public static void populateDatabaseWithIDs(int amtOfNames){
+	public static void populateDatabaseWithIDs(int amtOfNames) {
 		int i = 0;
 		String name;
 		
@@ -104,7 +104,16 @@ public class ProblemOne {
 				name = input.readLine().toUpperCase();
 				if(name.matches("[A-Z]+")) {
 					
-					name = name.substring(0,3);	
+					if(name.length() >= 3) {
+						name = name.substring(0,3);
+					}
+					else if(name.length() == 2){
+						name = name.substring(0, 2);
+					}
+					else {
+						throw new InvalidFormatException("The names entered must be greater than or equal to two characters at minimum.");
+					}
+					
 					long occurencesOfName = col.countDocuments(new Document("name", name)) + 1;
 					
 					col.insertOne(new Document("name", name).append("occurence", occurencesOfName)
@@ -114,16 +123,16 @@ public class ProblemOne {
 					i++;
 				}
 				else {
-					throw new InputMismatchException();
+					throw new InvalidFormatException("When entering a name, please only use letters [A-Z], upper and or lowercase is allowed.\n");
 				}
 			}
-			catch(InputMismatchException e) {
-				System.out.println("When entering a name, please only use letters [A-Z], upper and or lowercase is allowed.\n");
+			catch(InvalidFormatException e) {
+				System.out.println(e.getMessage());
 			}
 			catch(IOException e1) {
 				e1.printStackTrace();
 			}
-		}
+		}	
 	}
 	
 	/**

@@ -38,6 +38,21 @@ ProblemThree), there is the same structure, as follows:
                 target/generated-soruces --> this directory has nothing in it but maven automatically
                                              created it 
 
+    II.i Problem Descriptions
+        Problem One-
+            This problem I used a database approach. I took in how many names the user wanted to add, and then took the substring of
+            this name by extracting the first three digits. I added the functionality that if the name is only two characters long
+            it will take those two characters and then add the 3 digit ID code at the end. I also made it so you cannot enter a one
+            character long name, because I don't know anyone who has a one letter name, but do know people with the name Xi etc. After
+            taking the substring of the names I count how many names like that are already in the databse (adding one to it because
+            this is a valid name so we consider it added, for mathematical reasons), and then multiply that number by 5 to create the
+            three digit ID. I then go through the MongoDB collection and extract each name as it was entered and output it to the user.
+            The information is all saved within the database and carries over from each run of the application on the local machine.
+
+        Problem Two-
+            This problem I used the OpenCSV dependency. This made it extremely simple to just grab each element and print it within the
+            console and not have to worry about excluding the commas from each line. 
+
 To run the programs I used the following commands (This is just an example, use the correct number ie, for problem one use One, Two etc.)
 All of the subdirectories have there own 0-README.txt file to show what exact commands you run to run the JAR.
 

@@ -51,7 +51,18 @@ ProblemThree), there is the same structure, as follows:
 
         Problem Two-
             This problem I used the OpenCSV dependency. This made it extremely simple to just grab each element and print it within the
-            console and not have to worry about excluding the commas from each line. 
+            console and not have to worry about excluding the commas from each line. I used the .skip() method from the OpenCSV API documentation
+            to skip to Id, Name, and Address fields listed in the beginning of the file, because the sample output on the problem sheet omitted it
+            so I felt it was necessary to do so as well. As always, when finished with the process I closed the CSV reader.
+
+        Problem Three-
+            This problem did not need Maven to be executed, although I used it anyway just to package it as a jar easier. I took an Object Oriented
+            approach with this problem by creating an abstract Number class, with two child classes as SocialSecurityNumber and PhoneNumber. These
+            classes made it easier because they each contained a couple of abstract methods that made the overall main function of the code shorter.
+            In each of the classes (SSN and PN) I used a regular expression checker (.match() method) in order to see if the respective number
+            they entered only contain numbers rather than special characters or letters etc. The number is then outputted to the user, and the 
+            process continues until the user enters Q as wanted. If they enter an invalid choice, it prints out what they entered and prompts them
+            that it was an invalid entry. 
 
 To run the programs I used the following commands (This is just an example, use the correct number ie, for problem one use One, Two etc.)
 All of the subdirectories have there own 0-README.txt file to show what exact commands you run to run the JAR.

@@ -50,6 +50,7 @@ All of the subdirectories have there own 0-README.txt file to show what exact co
 III. Necessary Technologies
 
 Some technologies that I used within the programs are the following:
+
     - MongoDB (Problem 1)
         - The JAR dependencies needed for Mongo within Java (which are downloaded within the repo, and can be via the pom.xml file)
     - OpenCSV (dependency for Problem 2)

@@ -72,7 +72,10 @@ All of the subdirectories have there own 0-README.txt file to show what exact co
     2. ` java -jar target/ProblemOne-0.0.1-SNAPSHOT.jar `
     3. Output will be printed to the console following this step
 
-    Disclaimer --> I am working on a Mac, I tested these programs on an Ubuntu VM and they worked fine. 
+    Disclaimer --> I am working on a Mac, I tested these programs on an Ubuntu VM and they worked fine. All I had to do was install MongoDB
+                   (for Problem One) on my VM. I did that with the following command:
+                
+                   ` sudo apt install mongodb ` 
 
 III. Necessary Technologies
 

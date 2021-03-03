@@ -38,6 +38,24 @@ ProblemThree), there is the same structure, as follows:
                 target/generated-soruces --> this directory has nothing in it but maven automatically
                                              created it 
 
+To run the programs I used the following commands (This is just an example, use the correct number ie, for problem one use One, Two etc.)
+All of the subdirectories have there own 0-README.txt file to show what exact commands you run to run the JAR.
+
+    1. ` mvn clean install package `
+    2. ` java -jar target/ProblemOne-0.0.1-SNAPSHOT.jar `
+    3. Output will be printed to the console following this step
+
+    Disclaimer --> I am working on a Mac, I tested these programs on an Ubuntu VM and they worked fine. 
+
 III. Necessary Technologies
+
+Some technologies that I used within the programs are the following:
+    - MongoDB (Problem 1)
+        - The JAR dependencies needed for Mongo within Java (which are downloaded within the repo, and can be via the pom.xml file)
+    - OpenCSV (dependency for Problem 2)
+
+
+
+
 
 
